@@ -1,0 +1,12 @@
+.venv/
+/data/
+__pycache__/
+.webui_secret_key
+.claude/settings.local.json
+.DS_Store
+# 私人筆記、本機文件、範例筆記與評估題目都只留在本機
+/vault/
+/docs/
+/examples/
+/eval/
+本地LLM速查.md

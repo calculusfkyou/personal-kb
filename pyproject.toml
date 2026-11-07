@@ -1,0 +1,27 @@
+[project]
+name = "kb"
+version = "0.1.0"
+description = "Personal knowledge base: Obsidian notes + BM25 + Chroma + local LLM"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "chromadb>=1.5.9",
+    "jieba>=0.42.1",
+    "markitdown[docx,pdf,pptx,xlsx]>=0.1.9",
+    "openai>=3.42.1",
+    "pyyaml>=6.0.3",
+    "rank-bm25>=0.2.2",
+    "typer>=0.27.3",
+]
+
+[project.scripts]
+kb = "kb.cli:app"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
